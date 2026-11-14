@@ -382,7 +382,7 @@ function AppShell() {
                 that make you pause.
               </Text>
               <p className="philosophy-end">
-                Useful by intention. Open to discovery.
+                Useful by intention. Open to discovery. Care is our moat.
               </p>
               <a
                 className="text-link github-link"
