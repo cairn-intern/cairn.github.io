@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,6 +12,20 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cairn.github.io" />
     <link rel="preload" href="/fonts/space-grotesk-variable.ttf" as="font" type="font/ttf" crossorigin />
+    <!-- Document setup only: the theme's font loading and smooth
+         scrolling. All component and layout styling is StyleX. -->
+    <style>
+      @font-face {
+        font-family: 'Space Grotesk';
+        src: url('/fonts/space-grotesk-variable.ttf') format('truetype');
+        font-weight: 300 700;
+        font-style: normal;
+        font-display: swap;
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        html { scroll-behavior: smooth; }
+      }
+    </style>
     <script data-goatcounter="https://cairn.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   </head>
   <body id="home">
