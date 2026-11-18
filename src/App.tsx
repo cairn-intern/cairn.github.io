@@ -914,7 +914,7 @@ function AppShell() {
                 variant="secondary"
                 href="https://github.com/cairn/cairn"
                 icon={<GitHubIcon />}
-                label="Explore Cairn"
+                label="Cairn on GitHub"
                 xstyle={styles.focusRing}
               />
             </div>
