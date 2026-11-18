@@ -877,7 +877,7 @@ function AppShell() {
             </span>
           </div>
           <div {...stylex.props(styles.heroFoot)}>
-            <span>Built with curiosity. Built in the open.</span>
+            <span>Built with curiosity. Released in the open.</span>
             <a {...stylex.props(styles.link, styles.heroFootLink)} href="#cairn-code">
               Discover Cairn Code{' '}
               <span {...stylex.props(styles.footArrow)} aria-hidden="true">
