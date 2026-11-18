@@ -795,6 +795,10 @@ export function BrailleCairn() {
       if (reduced || !event.isPrimary || event.button !== 0) {
         return;
       }
+      // Claim every press that lands on the canvas, painted or not:
+      // most of the box is empty space between the stones, and a drag
+      // that starts there must still never become a text selection.
+      event.preventDefault();
       if (motion.pressedColumn !== null) {
         return;
       }
@@ -815,8 +819,6 @@ export function BrailleCairn() {
       }
       motion.press(col);
       canvas.setPointerCapture(event.pointerId);
-      // Keep the browser from turning the drag into a selection.
-      event.preventDefault();
     };
 
     const onPointerMove = (event: PointerEvent) => {
