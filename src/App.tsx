@@ -11,6 +11,7 @@ import {TopNav} from '@astryxdesign/core/TopNav';
 import {Theme} from '@astryxdesign/core/theme';
 import {colorVars} from '@astryxdesign/core/theme/tokens.stylex';
 
+import {BrailleCairn} from './BrailleCairn';
 import {cairnTheme} from './CairnTheme';
 import {siteVars} from './siteTokens.stylex';
 
@@ -290,12 +291,6 @@ const styles = stylex.create({
     width: {default: null, '@media (max-width: 700px)': '100%'},
     justifySelf: {default: null, '@media (max-width: 700px)': 'center'},
     marginTop: {default: null, '@media (max-width: 700px)': 25},
-  },
-  heroLogo: {
-    display: 'block',
-    width: '100%',
-    height: '100%',
-    objectFit: 'contain',
   },
   artCaption: {
     position: 'absolute',
@@ -876,15 +871,7 @@ function AppShell() {
             </div>
           </div>
           <div {...stylex.props(styles.cairnArt)}>
-            <img
-              {...stylex.props(styles.heroLogo)}
-              src="/cairn-avatar.png"
-              alt="Cairn: nine coral dots arranged in a pyramid"
-              width="2048"
-              height="2048"
-              // @ts-expect-error fetchpriority is not yet in React's types
-              fetchpriority="high"
-            />
+            <BrailleCairn />
             <span {...stylex.props(styles.artCaption)}>
               A marker for what comes next.
             </span>
