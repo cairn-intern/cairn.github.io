@@ -561,6 +561,11 @@ const styles = stylex.create({
     height: '100%',
     // Sideways drags spin the cairn; vertical drags still scroll.
     touchAction: 'pan-y',
+    // A spin drag must never start a text selection or the iOS long
+    // press callout: the canvas is a control, not prose.
+    userSelect: 'none',
+    WebkitUserSelect: 'none',
+    WebkitTouchCallout: 'none',
   },
 });
 
@@ -810,6 +815,8 @@ export function BrailleCairn() {
       }
       motion.press(col);
       canvas.setPointerCapture(event.pointerId);
+      // Keep the browser from turning the drag into a selection.
+      event.preventDefault();
     };
 
     const onPointerMove = (event: PointerEvent) => {
