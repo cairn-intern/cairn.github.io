@@ -879,7 +879,7 @@ function AppShell() {
           <div {...stylex.props(styles.heroFoot)}>
             <span>Built with curiosity. Released in the open.</span>
             <a {...stylex.props(styles.link, styles.heroFootLink)} href="#cairn-code">
-              Discover Cairn Code{' '}
+              Discover Cairn{' '}
               <span {...stylex.props(styles.footArrow)} aria-hidden="true">
                 ↓
               </span>
@@ -905,7 +905,7 @@ function AppShell() {
               </Heading>
               <div {...stylex.props(styles.featureBody)}>
                 <Text color="secondary">
-                  Cairn Code brings the agent into your development workflow.
+                  Cairn brings the agent into your development workflow.
                   It explores your project, makes focused edits, and checks
                   the result with your own tools.
                 </Text>
@@ -914,14 +914,14 @@ function AppShell() {
                 variant="secondary"
                 href="https://github.com/cairn/cairn"
                 icon={<GitHubIcon />}
-                label="Explore Cairn Code"
+                label="Explore Cairn"
                 xstyle={styles.focusRing}
               />
             </div>
             <Card padding={0}>
               <div {...stylex.props(styles.workflowTitle)}>
                 <span {...stylex.props(styles.statusDot)} aria-hidden="true" />
-                Cairn Code
+                Cairn
                 <span {...stylex.props(styles.workflowTitleEnd)}>
                   The agent loop
                 </span>
@@ -1004,7 +1004,7 @@ function AppShell() {
                       <a
                         {...stylex.props(styles.link, styles.projectHeadingLink)}
                         href="https://github.com/cairn/cairn">
-                        Cairn Code
+                        Cairn
                         <GitHubIcon />
                       </a>
                     </Heading>
